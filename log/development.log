@@ -121,3 +121,239 @@ Processing by HelloController#hello_world as HTML
 Completed 200 OK in 11ms (Views: 9.6ms | MongoDB: 0.0ms | Allocations: 3509)
 
 
+Started GET "/" for ::1 at 2019-12-15 09:07:11 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/reyber/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/reyber/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 34.6ms | Allocations: 307)
+Completed 200 OK in 129ms (Views: 40.3ms | MongoDB: 0.0ms | Allocations: 1618)
+
+
+Started GET "/usere" for ::1 at 2019-12-15 09:07:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/usere"):
+  
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-12-15 09:07:27 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 29.99 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47225621458280 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47225621681440 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2019-12-15 15:07:27 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.090877924>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [7] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.015s
+  Rendered users/index.html.erb within layouts/application (Duration: 130.1ms | Allocations: 4485)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 197ms (Views: 176.9ms | MongoDB: 0.0ms | Allocations: 16075)
+
+
+Started GET "/users" for ::1 at 2019-12-15 09:14:10 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [8] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [8] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 84.9ms | MongoDB: 0.0ms | Allocations: 8820)
+
+
+Started GET "/users/5df4887cdf6be0271399688c/edit" for ::1 at 2019-12-15 09:14:14 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [9] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [9] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.061s
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 66.7ms | Allocations: 4261)
+  Rendered users/edit.html.erb within layouts/application (Duration: 68.7ms | Allocations: 4668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 76.7ms | MongoDB: 0.1ms | Allocations: 9430)
+
+
+Started PATCH "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:15:00 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"xU1dsvGpvk52x8YdB/J+w9xOoYn3cYfuXlSYrTcQZcxVtWA+1ihvsHcq431wxASBX0Wt4Glq46ybz54nxtClgQ==", "user"=>{"email"=>"dragonite0695@gmail.com", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415602", "work_place"=>"Homie"}, "commit"=>"Update User", "id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [10] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [10] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+[31mUnpermitted parameter: :work_place[0m
+MONGODB | [11] localhost:27017 #1 | exercise2_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}, "u"=>{"$set"=>{"email"=>"dragonite0695@gmail.com", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415602"}}}], "ordered"=>true}
+MONGODB | [11] localhost:27017 | exercise2_development.update | SUCCEEDED | 0.023s
+Redirected to http://localhost:3000/users/5df4887cdf6be0271399688c
+Completed 302 Found in 33ms (MongoDB: 0.0ms | Allocations: 3280)
+
+
+Started GET "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:15:00 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [12] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [12] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.3ms | MongoDB: 0.0ms | Allocations: 5116)
+
+
+Started GET "/users/5df4887cdf6be0271399688c/edit" for ::1 at 2019-12-15 09:15:09 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [13] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [13] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.2ms | Allocations: 1389)
+  Rendered users/edit.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1511)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 19.7ms | MongoDB: 0.0ms | Allocations: 6101)
+
+
+Started PATCH "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:16:04 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"8zxVM8gKWx5xrs4enzJkPfk+TtfkHij2ah1taULpMQljxGi/74uK4HBD637oBB5/ejVCvnoFTLSvhmvjsynxRA==", "user"=>{"email"=>"dragonite0695@gmail.com", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415602", "work_place"=>"Homie"}, "commit"=>"Update User", "id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [14] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [14] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.002s
+[31mUnpermitted parameter: :work_place[0m
+Redirected to http://localhost:3000/users/5df4887cdf6be0271399688c
+Completed 302 Found in 23ms (MongoDB: 0.0ms | Allocations: 5269)
+
+
+Started GET "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:16:04 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [15] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [15] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.8ms | MongoDB: 0.0ms | Allocations: 4491)
+
+
+Started GET "/users" for ::1 at 2019-12-15 09:16:10 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [16] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [16] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.002s
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1568)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.4ms | MongoDB: 0.0ms | Allocations: 4887)
+
+
+Started GET "/users/5df4887cdf6be0271399688c/edit" for ::1 at 2019-12-15 09:17:54 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [17] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [17] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.002s
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.7ms | Allocations: 1488)
+  Rendered users/edit.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1612)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 14.8ms | MongoDB: 0.0ms | Allocations: 9572)
+
+
+Started PATCH "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:18:00 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"KZheVTLupmnedCXZHEakuvP5kHHJNckedU8Tn3rGNdy5YGPZFW93l9+ZALlrcN74cPKcGFcurVyw1BUViwb1kQ==", "user"=>{"email"=>"dragonite0695@gmail.com", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415602", "work_place"=>"Homie"}, "commit"=>"Update User", "id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [18] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [18] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+MONGODB | [19] localhost:27017 #1 | exercise2_development.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}, "u"=>{"$set"=>{"work_place"=>"Homie"}}}], "ordered"=>true}
+MONGODB | [19] localhost:27017 | exercise2_development.update | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/users/5df4887cdf6be0271399688c
+Completed 302 Found in 10ms (MongoDB: 0.0ms | Allocations: 1931)
+
+
+Started GET "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:18:00 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [20] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [20] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.4ms | MongoDB: 0.0ms | Allocations: 4330)
+
+
+Started GET "/users" for ::1 at 2019-12-15 09:18:06 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [21] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [21] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1569)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.0ms | MongoDB: 0.0ms | Allocations: 4892)
+
+
+Started GET "/users/5df4887cdf6be0271399688c/edit" for ::1 at 2019-12-15 09:18:58 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [22] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [22] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.6ms | Allocations: 1831)
+  Rendered users/edit.html.erb within layouts/application (Duration: 13.0ms | Allocations: 2231)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 28.5ms | MongoDB: 0.0ms | Allocations: 7160)
+
+
+Started PATCH "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:19:04 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"qL2eahaDeQZHmp3UInPkdn7qUhPjPTqplZ7UMou0iGs4RaPmMQKo+EZ3uLRVRZ40/eFeen0mXutQBdK4enRIJg==", "user"=>{"email"=>"dragonite0695@gmail.com", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415602", "work_place"=>"Homie"}, "commit"=>"Update User", "id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [23] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [23] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/users/5df4887cdf6be0271399688c
+Completed 302 Found in 10ms (MongoDB: 0.0ms | Allocations: 1867)
+
+
+Started GET "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-15 09:19:04 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [24] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [24] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 24.8ms | MongoDB: 0.0ms | Allocations: 4716)
+
+
+Started GET "/users" for ::1 at 2019-12-15 09:19:09 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [25] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [25] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1403)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.6ms | MongoDB: 0.0ms | Allocations: 4867)
+
+
