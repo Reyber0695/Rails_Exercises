@@ -1,0 +1,123 @@
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from <main> at /home/reyber/Documentos/Exercise2/bin/rails:9)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from <main> at /home/reyber/Documentos/Exercise2/bin/rails:9)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from <main> at /home/reyber/Documentos/Exercise2/bin/rails:9)
+Started GET "/" for ::1 at 2019-12-14 00:59:27 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/reyber/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/reyber/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 36.7ms | Allocations: 470)
+Completed 200 OK in 106ms (Views: 62.5ms | MongoDB: 0.0ms | Allocations: 2642)
+
+
+Started GET "/users" for ::1 at 2019-12-14 00:59:42 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47385950515300 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47385950481880 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2019-12-14 06:59:42 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.537958189>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [7] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.093s
+  Rendered users/index.html.erb within layouts/application (Duration: 643.5ms | Allocations: 4194)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/reyber/Documentos/Exercise2/public/packs
+[Webpacker] Hash: d010700f5689af4f034c
+Version: webpack 4.41.2
+Time: 5606ms
+Built at: 2019-12-14 0:59:55
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-79133a55ac0e8080e7c9.js   89.1 KiB  application  [emitted] [immutable]  application
+js/application-79133a55ac0e8080e7c9.js.map   97.8 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-79133a55ac0e8080e7c9.js js/application-79133a55ac0e8080e7c9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 707 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 13182ms (Views: 13119.3ms | MongoDB: 0.1ms | Allocations: 30633)
+
+
+Started GET "/users/new" for ::1 at 2019-12-14 00:59:59 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 126.6ms | Allocations: 9630)
+  Rendered users/new.html.erb within layouts/application (Duration: 131.6ms | Allocations: 9985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 154ms (Views: 152.2ms | MongoDB: 0.0ms | Allocations: 13480)
+
+
+Started POST "/users" for ::1 at 2019-12-14 01:00:12 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"JlkUkMXCQqEBJqx29vPQ4mE7T1f/Xd6+yxL70bu+t96xrxltKu7DaNlwrR9DNpW7Ryq7AaN9yhUI3YXdoitleQ==", "user"=>{"email"=>"xdxdx", "name"=>"xdxd", "last_name"=>"xdxdx", "mobile_phone"=>"xdxd"}, "commit"=>"Create User"}
+MONGODB | [8] localhost:27017 #1 | exercise2_development.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c'), "email"=>"xdxdx", "name"=>"xdxd", "last_name"=>"xdxdx", "mobile_phone"=>"xdxd"}], "ordered"=>true}
+MONGODB | [8] localhost:27017 | exercise2_development.insert | SUCCEEDED | 1.098s
+Redirected to http://localhost:3000/users/5df4887cdf6be0271399688c
+Completed 302 Found in 1108ms (MongoDB: 1.1ms | Allocations: 1732)
+
+
+Started GET "/users/5df4887cdf6be0271399688c" for ::1 at 2019-12-14 01:00:13 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df4887cdf6be0271399688c"}
+MONGODB | [9] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4887cdf6be0271399688c')}}
+MONGODB | [9] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.089s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 337)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 19.5ms | MongoDB: 0.1ms | Allocations: 5038)
+
+
+Started GET "/users" for ::1 at 2019-12-14 01:00:17 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [10] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [10] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.032s
+  Rendered users/index.html.erb within layouts/application (Duration: 42.3ms | Allocations: 1571)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 59.0ms | MongoDB: 0.0ms | Allocations: 4817)
+
+
+Started GET "/users" for ::1 at 2019-12-14 01:10:26 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x46922158934340 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x46922159081640 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>1000, "localTime"=>2019-12-14 07:10:27 UTC, "maxWireVersion"=>5, "minWireVersion"=>0, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.960561541>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | exercise2_development.find | STARTED | {"find"=>"users", "filter"=>{}}
+MONGODB | [7] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.887s
+  Rendered users/index.html.erb within layouts/application (Duration: 1878.3ms | Allocations: 4561)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2646ms (Views: 2606.9ms | MongoDB: 0.9ms | Allocations: 29204)
+
+
+Started GET "/hello_world" for ::1 at 2019-12-14 01:10:41 -0600
+Processing by HelloController#hello_world as HTML
+  Rendering hello/hello_world.html.erb within layouts/application
+  Rendered hello/hello_world.html.erb within layouts/application (Duration: 34.9ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 44.7ms | MongoDB: 0.0ms | Allocations: 3886)
+
+
+Started GET "/hello_world" for ::1 at 2019-12-14 01:11:04 -0600
+Processing by HelloController#hello_world as HTML
+  Rendering hello/hello_world.html.erb within layouts/application
+  Rendered hello/hello_world.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | MongoDB: 0.0ms | Allocations: 3509)
+
+
