@@ -357,3 +357,181 @@ MONGODB | [25] localhost:27017 | exercise2_development.find | SUCCEEDED | 0.001s
 Completed 200 OK in 18ms (Views: 16.6ms | MongoDB: 0.0ms | Allocations: 4867)
 
 
+Started GET "/" for ::1 at 2019-12-16 23:42:31 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/reyber/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/reyber/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 48.1ms | Allocations: 307)
+Completed 200 OK in 131ms (Views: 76.8ms | MongoDB: 0.0ms | Allocations: 1622)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-16 23:42:46 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 26.8ms | Allocations: 91)
+Completed 200 OK in 33ms (Views: 31.1ms | MongoDB: 0.0ms | Allocations: 1009)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-16 23:44:29 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 0.8ms | Allocations: 128)
+Completed 200 OK in 13ms (Views: 12.0ms | MongoDB: 0.0ms | Allocations: 993)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-16 23:46:50 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 2ms (Views: 1.0ms | MongoDB: 0.0ms | Allocations: 328)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-16 23:59:42 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 0.1ms | Allocations: 20)
+Completed 200 OK in 2ms (Views: 1.0ms | MongoDB: 0.0ms | Allocations: 330)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-16 23:59:59 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 0.1ms | Allocations: 20)
+Completed 200 OK in 2ms (Views: 1.1ms | MongoDB: 0.0ms | Allocations: 330)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:00:48 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 1191.1ms | Allocations: 8191)
+Completed 500 Internal Server Error in 1196ms (MongoDB: 0.0ms | Allocations: 8925)
+
+
+  
+ActionView::Template::Error (The asset "aplication.css" is not present in the asset pipeline.):
+    2: 
+    3: </header>
+    4: 
+    5: <%= stylesheet_link_tag "aplication"%>
+  
+app/views/reports/info.html.erb:5
+Started GET "/reports/info" for ::1 at 2019-12-17 00:01:20 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 7.6ms | Allocations: 5732)
+Completed 500 Internal Server Error in 14ms (MongoDB: 0.0ms | Allocations: 6021)
+
+
+  
+ActionView::Template::Error (The asset "aplication.css" is not present in the asset pipeline.):
+    2: 
+    3: </header>
+    4: 
+    5: <%= stylesheet_link_tag "aplication"%>
+  
+app/views/reports/info.html.erb:5
+Started GET "/reports/info" for ::1 at 2019-12-17 00:01:58 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 494.5ms | Allocations: 11914)
+Completed 200 OK in 532ms (Views: 530.5ms | MongoDB: 0.0ms | Allocations: 12792)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:13:39 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 90.0ms | Allocations: 4250)
+Completed 200 OK in 166ms (Views: 112.2ms | MongoDB: 0.0ms | Allocations: 5114)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:14:32 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered reports/info.html.erb within layouts/reports (Duration: 240.6ms | Allocations: 2851)
+Completed 200 OK in 244ms (Views: 243.3ms | MongoDB: 0.0ms | Allocations: 3713)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:23:24 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 56.3ms | Allocations: 3969)
+Completed 200 OK in 61ms (Views: 59.9ms | MongoDB: 0.0ms | Allocations: 4837)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:23:48 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 9.0ms | Allocations: 1137)
+Completed 200 OK in 13ms (Views: 10.0ms | MongoDB: 0.0ms | Allocations: 1447)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:24:35 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 16.0ms | Allocations: 1292)
+Completed 200 OK in 24ms (Views: 22.2ms | MongoDB: 0.0ms | Allocations: 2157)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:25:03 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 4.8ms | Allocations: 1137)
+Completed 200 OK in 13ms (Views: 12.8ms | MongoDB: 0.0ms | Allocations: 1447)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:26:35 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 5.2ms | Allocations: 1137)
+Completed 200 OK in 7ms (Views: 6.5ms | MongoDB: 0.0ms | Allocations: 1446)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:27:43 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 6.9ms | Allocations: 1247)
+Completed 200 OK in 17ms (Views: 15.6ms | MongoDB: 0.0ms | Allocations: 2109)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:28:28 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 3.4ms | Allocations: 1178)
+Completed 200 OK in 12ms (Views: 8.9ms | MongoDB: 0.0ms | Allocations: 1488)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:30:37 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 5.5ms | Allocations: 1178)
+Completed 200 OK in 8ms (Views: 7.0ms | MongoDB: 0.0ms | Allocations: 1644)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:38:06 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 0.6ms | Allocations: 93)
+Completed 200 OK in 21ms (Views: 15.3ms | MongoDB: 0.0ms | Allocations: 2164)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:50:27 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 22.4ms | Allocations: 1272)
+Completed 200 OK in 27ms (Views: 25.2ms | MongoDB: 0.0ms | Allocations: 2138)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:51:05 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 25.6ms | Allocations: 1273)
+Completed 200 OK in 47ms (Views: 45.7ms | MongoDB: 0.0ms | Allocations: 2143)
+
+
+Started GET "/reports/info" for ::1 at 2019-12-17 00:53:19 -0600
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/reports
+  Rendered reports/info.html.erb within layouts/reports (Duration: 8.0ms | Allocations: 1231)
+Completed 200 OK in 17ms (Views: 15.8ms | MongoDB: 0.0ms | Allocations: 2095)
+
+

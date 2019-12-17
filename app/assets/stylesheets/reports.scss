@@ -1,0 +1,25 @@
+// Place all the styles related to the Reports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.auto {
+  margin: auto;
+}
+
+$red : red;
+$yellow : yellow;
+$green : green;
+$black : black;
+$blue : blue;
+
+header {
+  border: 1px $red solid;
+  width: 375px;
+  height: 80px;
+}
