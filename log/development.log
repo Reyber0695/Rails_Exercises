@@ -2843,3 +2843,70 @@ Processing by ReportsController#info as HTML
 Completed 200 OK in 134ms (Views: 101.2ms | MongoDB: 0.0ms | Allocations: 16962)
 
 
+Started GET "/" for 127.0.0.1 at 2019-12-19 09:25:23 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee4/.rvm/gems/ruby-2.5.1/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee4/.rvm/gems/ruby-2.5.1/gems/railties-6.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.9ms | Allocations: 444)
+Completed 200 OK in 45ms (Views: 38.3ms | MongoDB: 0.0ms | Allocations: 2475)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-19 09:25:31 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47001454335060 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47001453976820 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-12-19 15:25:31 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.00133952>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | exercise4_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47001453878720 type=uuid data=0xed29570a54c84599...>}}
+MONGODB | [7] localhost:27017 | exercise4_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 4497)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 274ms (Views: 221.2ms | MongoDB: 0.0ms | Allocations: 52606)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-19 09:25:33 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 364.9ms | Allocations: 9497)
+  Rendered users/new.html.erb within layouts/application (Duration: 366.0ms | Allocations: 9864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 374ms (Views: 372.9ms | MongoDB: 0.0ms | Allocations: 13599)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-19 09:26:22 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"tDqLG0PTwI4iIQW6f4ylJ8QxHxfI34hy0T8sqViuQbFZZSOrx7l4Di28vOcVv0AjtVA05rX6lQ5TnOqkF+szbg==", "user"=>{"email"=>"reybersantos@outlook.es", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415601"}, "commit"=>"Create User"}
+MONGODB | [8] localhost:27017 #1 | exercise4_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5dfb969eb9bf1a1008cdaee4'), "email"=>"reybersantos@outlook.es", "name"=>"Reyber", "last_name"=>"Santos", "mobile_phone"=>"9991415601"}], "lsid"=>{"id"=><BSON::Binary:0x47001453...
+MONGODB | [8] localhost:27017 | exercise4_development.insert | SUCCEEDED | 0.331s
+Redirected to http://localhost:3000/users/5dfb969eb9bf1a1008cdaee4
+Completed 302 Found in 335ms (MongoDB: 0.3ms | Allocations: 1718)
+
+
+Started GET "/users/5dfb969eb9bf1a1008cdaee4" for 127.0.0.1 at 2019-12-19 09:26:23 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5dfb969eb9bf1a1008cdaee4"}
+MONGODB | [9] localhost:27017 #1 | exercise4_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5dfb969eb9bf1a1008cdaee4')}, "lsid"=>{"id"=><BSON::Binary:0x47001453878720 type=uuid data=0xed29570a54c84599...>}}
+MONGODB | [9] localhost:27017 | exercise4_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 346)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.1ms | MongoDB: 0.0ms | Allocations: 5461)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-19 09:26:25 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [10] localhost:27017 #1 | exercise4_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47001453878720 type=uuid data=0xed29570a54c84599...>}}
+MONGODB | [10] localhost:27017 | exercise4_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | MongoDB: 0.0ms | Allocations: 5226)
+
+

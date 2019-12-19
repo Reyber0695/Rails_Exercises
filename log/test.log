@@ -56,3 +56,9 @@ Processing by ReportsController#info as HTML
   Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.3ms | Allocations: 297)
   Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
 Completed 200 OK in 18ms (Views: 6.9ms | MongoDB: 0.0ms | Allocations: 2462)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 0.8ms | Allocations: 297)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 6ms (Views: 4.7ms | MongoDB: 0.0ms | Allocations: 2462)
