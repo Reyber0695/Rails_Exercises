@@ -1,0 +1,32 @@
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.9ms | Allocations: 948)
+Completed 500 Internal Server Error in 247ms (MongoDB: 0.0ms | Allocations: 3709)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 2.1ms | Allocations: 948)
+Completed 500 Internal Server Error in 8ms (MongoDB: 0.0ms | Allocations: 3709)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.4ms | Allocations: 948)
+Completed 500 Internal Server Error in 5ms (MongoDB: 0.0ms | Allocations: 3709)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.6ms | Allocations: 948)
+Completed 500 Internal Server Error in 7ms (MongoDB: 0.0ms | Allocations: 3709)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.3ms | Allocations: 949)
+Completed 500 Internal Server Error in 5ms (MongoDB: 0.0ms | Allocations: 3710)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.6ms | Allocations: 948)
+Completed 500 Internal Server Error in 6ms (MongoDB: 0.0ms | Allocations: 3709)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.9ms | Allocations: 949)
+Completed 500 Internal Server Error in 6ms (MongoDB: 0.0ms | Allocations: 3710)
+Processing by ReportsController#info as HTML
+  Rendering reports/info.html.erb within layouts/new_layout
+  Rendered reports/info.html.erb within layouts/new_layout (Duration: 1.9ms | Allocations: 948)
+Completed 500 Internal Server Error in 8ms (MongoDB: 0.0ms | Allocations: 3709)

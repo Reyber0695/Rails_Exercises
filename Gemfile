@@ -47,7 +47,7 @@ end
 
 group :test do
   gem 'factory_bot'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.9.0'
   gem 'database_cleaner'
   gem 'mongoid-rspec'
 end
